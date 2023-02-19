@@ -1,0 +1,137 @@
+.res-content-wrapper {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.80)
+    ),
+    url("../assets/fon.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.res-content-container {
+  width: 85%;
+  margin: 0px auto;
+  padding: 60px 0;
+}
+
+.form {
+  width: 60%;
+  max-width: 650px;
+  height: auto;
+  background-color: #fff;
+  color: #181818;
+  border-radius: 15px;
+  margin: 15px auto;
+  padding: 30px 40px 40px;
+  text-align: left;
+}
+
+.form h1 {
+  font-size: 26pt;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form p {
+  font-size: smaller;
+  margin-bottom: 30px;
+}
+
+fieldset {
+  border: none;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.field label {
+  font-size: 18px;
+  margin: 0 0 5px 0px;
+  font-weight: 500;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid rgba(51, 51, 51, 0.3);
+  border-radius: 5px;
+  width: 100%;
+}
+
+input[type="datetime-local"] {
+  color: #949494;
+}
+
+.guestsdate {
+  display: grid;
+  grid-template-columns: 68% 28%;
+  gap: 4%;
+}
+
+.occasion {
+  display: flex;
+  flex-direction: column;
+}
+
+.options {
+  padding-right: 10px;
+  border: 1px solid rgba(51, 51, 51, 0.3);
+  border-radius: 5px;
+}
+
+select {
+  padding: 10px;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 15px;
+  color: #949494;
+}
+
+.reserve-btn {
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #f4ce14;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #181818;
+}
+
+.reserve-btn:hover {
+  background-color: #181818;
+  color: #f4ce14;
+  transition: 0.3s;
+}
+
+.error-message {
+  font-size: 15px;
+  color: red;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .res-content-container {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .form {
+    width: 100%;
+    margin-top: -50px;
+  }
+
+  .guestsdate {
+    display: flex;
+    flex-direction: column;
+  }
+}
