@@ -1,6 +1,7 @@
 {
   "name": "little-lemon-react",
-  "version": "1.0.0",
+  "homepage": "https://42proger.github.io/little-lemon-react",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
